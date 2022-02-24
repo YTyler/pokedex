@@ -5,12 +5,16 @@ import Image from 'next/Image'
 export default function Home({ pokemon }) {
   return (
     <Layout title="NextJS Pokedex">
-      <h1 className="mb-8 text-center text-4xl">NextJs Pokedex</h1>
+      <Link href="/dynamic_routing">
+        <a className="text-black">
+          <h1 className="mb-8 text-center text-4xl">NextJs Pokedex</h1>
+        </a>
+      </Link>
       <ul>
         {pokemon.map((mon, index) => (
           <li key={index}>
             <Link href={`/pokemon?id=${index + 1}`}>
-              <a className="border-gray my-2 flex items-center rounded-xl border bg-gray-100 p-4 text-lg capitalize">
+              <a className="my-2 flex items-center rounded-xl border bg-gray-100 p-4 text-xl capitalize text-black">
                 <Image
                   src={mon.image}
                   alt={mon.name}
