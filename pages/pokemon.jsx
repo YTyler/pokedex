@@ -9,13 +9,9 @@ export default function pokemon({ mon }) {
       <h1 className="mb-2 items-center text-center text-4xl capitalize">
         {mon.name}
       </h1>
-      <Image
-        className="mx-auto"
-        src={mon.image}
-        alt={mon.name}
-        width={800}
-        height={800}
-      />
+      <div className="flex justify-center">
+        <Image src={mon.image} alt={mon.name} width={400} height={400} />
+      </div>
       <div className="flex justify-evenly">
         <div className="text-right">
           <h2 className="mb-2 text-2xl">Base Stats</h2>
