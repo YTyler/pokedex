@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home({ pokemon }) {
   return (
     <Layout title="NextJS Pokedex">
-      <Link href="/dynamic_routing">
+      <Link href="/routing_example">
         <a className="text-black">
           <h1 className="mb-8 text-center text-4xl">NextJs Pokedex</h1>
         </a>

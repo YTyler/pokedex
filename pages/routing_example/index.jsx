@@ -13,10 +13,10 @@ export default () => {
             className="my-8 rounded-md bg-blue-300 py-4 text-center text-2xl drop-shadow-md"
             key={index + 1}
           >
-            <Link href={`/dynamic_routing/${index + 1}`}>
+            <Link href={`/routing_example/${index + 1}`}>
               <a>
                 <h2>{item} Dynamic Route</h2>
-                <h3 className="mt-2 text-lg">/dynamic_routing/{index + 1}</h3>
+                <h3 className="mt-2 text-lg">/routing_example/{index + 1}</h3>
               </a>
             </Link>
           </li>
@@ -25,10 +25,10 @@ export default () => {
           className="my-8 rounded-md bg-yellow-200 py-4 text-center text-2xl drop-shadow-md"
           key={0}
         >
-          <Link href={`/dynamic_routing/named`}>
+          <Link href={`/routing_example/named`}>
             <a>
               <h2>Named Route</h2>
-              <h3 className="mt-2 text-lg">/dynamic_routing/named</h3>
+              <h3 className="mt-2 text-lg">/routing_example/named</h3>
             </a>
           </Link>
         </li>
