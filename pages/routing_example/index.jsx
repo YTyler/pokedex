@@ -28,7 +28,7 @@ export default () => {
           <Link href={`/routing_example/named`}>
             <a>
               <h2>Named Route</h2>
-              <h3 className="mt-2 text-lg">/routing_example/named</h3>
+              <h3 className="mt-2 mb-4 text-lg">/routing_example/named</h3>
             </a>
           </Link>
         </li>
